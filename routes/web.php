@@ -16,3 +16,7 @@
 $router->get('/', function () {
     return view('greeting', ['name' => 'James']);
 });
+
+$router->get('/lol', function () {
+    return view('greeting', ['name' => 'Pierre']);
+});
