@@ -14,5 +14,5 @@
 */
 
 $router->get('/', function () {
-    return 'Hello World';
+    return view('greeting', ['name' => 'James']);
 });
