@@ -20,13 +20,14 @@
                 </div>
             </div>
             <div class="vtmn-toggle">
-            <div class="vtmn-toggle_switch">
-                <input type="checkbox" id="theme" onchange="switch_theme()"/>
-                <span aria-hidden="true"></span>
+                <div class="vtmn-toggle_switch">
+                    <input type="checkbox" id="theme" onchange="switch_theme()"/>
+                    <span aria-hidden="true"></span>
+                </div>
+                <label for="theme">Thème sombre</label>
             </div>
-            <label for="theme">Thème sombre</label>
         </div>
-        </div>
+        @include('forumNoel')
     </div>
 </body>
 </html>
