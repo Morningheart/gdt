@@ -20,3 +20,7 @@ $router->get('/', function () {
 $router->get('/lol', function () {
     return view('greeting', ['name' => 'Pierre']);
 });
+
+$router->get('/addPubliFormButton', function(){
+    return view('addPubliForm');
+});
