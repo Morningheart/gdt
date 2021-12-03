@@ -1,15 +1,9 @@
-# Projet NUIT DE L'INFO
+# PROJET NUIT DE L'INFO
 
-## Requirements :
+## install
 
-- composer : https://getcomposer.org/download/
-- php : version 7.4.26 minimum
+- `composer install`
 
-## Run : 
+## run
 
-`cmd# composer install`</br>
-`cmd# php -S localhost:8000 -t public`
-
-# Docs : 
-
-- https://laravel.com/docs/8.x/views#introduction
+- `php artisan serve`
