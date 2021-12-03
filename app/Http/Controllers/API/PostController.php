@@ -77,7 +77,18 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        //
+        $post = Post::find($post->idPost);
+        $post->postText = $request->postText;
+        $post->postDoc = $request->postDoc;
+        $post->postImg = $request->postImg;
+        $post->postDate =  $request->postDate;
+        $post->postLocation  =  $request->postLocation;
+        $post->user_id =  $request->user_id;
+
+        $post->update($request->all());
+
+        // On retourne les informations du nouvel utilisateur en JSON
+        return response()->json($post, 201);
     }
 
     /**

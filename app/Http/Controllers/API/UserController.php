@@ -29,13 +29,13 @@ class UserController extends Controller
         ]);
 
         // On crée un nouvel utilisateur
-        $user = User::create([
-            'userFirstName' => $request->userFirstName,
-            'userLastName' => $request->userLastName,
-            'userMail' => $request->userMail,
-            'userPassword' => bcrypt($request->userPassword),
-            'userPrivilege' => $request->userPrivilege
-        ]);
+        $user = new User();
+        
+        $user->userFirstName = $request->userFirstName;
+        $user->userLastName = $request->userLastName;
+        $user->userMail = $request->userMail;
+        $user->userPassword = bcrypt($request->userPassword);
+        $user->userPrivilege = $request->userPrivilege;
 
         $user->save();
 
