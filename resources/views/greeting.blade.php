@@ -20,7 +20,7 @@
         maxSpeed : 2,
         minSpeed : 1,
         color : "#fff",
-        char : "UwU",
+        char : "*",
         maxSize : 20,
         minSize : 8,
 
