@@ -18,5 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get('/addPubliFormButton', function(){
-    return view('greeting');
+    return view('addPubliForm');
+});
+
+Route::get('/InscriptionFormButton', function(){
+    return view('InscriptionForm');
+});
+
+Route::get('/connexionFormButton', function(){
+    return view('connexionForm');
 });

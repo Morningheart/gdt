@@ -12,9 +12,13 @@
         }
     ?>
     <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap" style="display: flex; flex-direction: row; align-items: center; padding: 10px">
-        <button class="vtmn-btn">Inscription</button>
+        <a href="InscriptionFormButton">
+            <button class="vtmn-btn">Inscription</button>
+        </a>
     </div>
     <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap" style="display: flex; flex-direction: row; align-items: center; padding: 10px">
-        <button class="vtmn-btn">Connexion</button>
+        <a href="connexionFormButton">
+            <button class="vtmn-btn">Connexion</button>    
+        </a>
     </div>
 </div>
