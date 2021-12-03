@@ -1,13 +1,16 @@
-<a href="/">
-    <div class="block vtmn-flex vtmn-justify-center">
-    <div class="vtmn-card vtmn-card_variant--full-image" style="width : 80%">
-        <div class="vtmn-card_image red-background">
-        <!-- <img
-            src="https://maisons-alfort.fr/wp-content/uploads/2019/01/sapin_noel.jpg"
-            alt=""
-        /> -->
+
+    <div class="block vtmn-flex vtmn-justify-center" style="" onclick=Location()>
+    <div id="noel" class="vtmn-card vtmn-card_variant--full-image" style="background-color: #b11e31; width : 80%">
+        <div class="vtmn-card_image">
+        <div class="" style="">
+        <script type="text/javascript">
+            window.onload = function(){
+                snow.init(1000); // 10 flocons seront donc affichés
+            };
+        </script>
         </div>
-        <div class="vtmn-card_content vtmn-card_content--opaque">
+        </div>
+        <div class="vtmn-card_content vtmn-card_content">
         <span class="vtmn-card_content--title">Joyeux Noël</span>
         <span class="vtmn-card_content--body">
             Souhaitez un Joyeux Noël à nos sauveur Quinkerkois !
@@ -15,4 +18,4 @@
         </div>
     </div>
     </div>
-</a>
+    
