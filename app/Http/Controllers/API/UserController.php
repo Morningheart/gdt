@@ -21,21 +21,27 @@ class UserController extends Controller
     {
         // La validation de données
         $this->validate($request, [
-           'name' => 'required|max:100',
-           'email' => 'required|email|unique:users',
-           'password' => 'required|min:8'
+           'userFirstName' => 'required|max:100',
+           'userLastName' => 'required|max:100',
+           'userMail' => 'required|max:100',
+           'userPassword' => 'required|max:100',
         ]);
 
         // On crée un nouvel utilisateur
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => bcrypt($request->password)
+        $user = new User([
+            'userFirstName' => $request->fname,
+            'userLastName' => $request->lname,
+            'userMail' => $request->mail,
+            'userPassword' => bcrypt($request->password),
+            'userPrivilege' => $request->priv
         ]);
+
+        $user->save();
 
         // On retourne les informations du nouvel utilisateur en JSON
         return response()->json($user, 201);
     }
+
 
     public function show(User $user)
     {

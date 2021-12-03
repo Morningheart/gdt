@@ -20,7 +20,7 @@ use App\Http\Controllers\API\PostController;
 
 Route::apiResource("users", UserController::class);
 
-Route::apiResource("hero", HeroController::class);
+Route::apiResource("heros", HeroController::class);
 
 Route::apiResource("post", PostController::class);
 

@@ -15,7 +15,11 @@ class HeroController extends Controller
      */
     public function index()
     {
-        //
+        // On récupère tous les utilisateurs
+        $heros = Hero::all();
+
+        // On retourne les informations des utilisateurs en JSON
+        return response()->json($heros);
     }
 
     /**
@@ -26,7 +30,22 @@ class HeroController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         // La validation de données
+         $this->validate($request, [
+            'heroFirstName' => 'required|max:100',
+            'heroLastName' => 'required|max:100'
+         ]);
+ 
+         // On crée un nouvel utilisateur
+         $hero = new User([
+             'heroFirstName' => $request->fname,
+             'heroLastName' => $request->lname
+         ]);
+ 
+         $hero->save();
+ 
+         // On retourne les informations du nouvel utilisateur en JSON
+         return response()->json($hero, 201);
     }
 
     /**
