@@ -1,9 +1,17 @@
 # PROJET NUIT DE L'INFO
 
-## install
+## URLs : 
 
-- `composer install`
+site principal : 
+- http://gtd.alwaysdata.net/<br>
 
-## run
+site defi noël : 
+- https://noel.nathanweb.dyjix.fr/
 
-- `php artisan serve`
+
+## Features : 
+- Scrapping du site
+
+- Front avec quelques animations 
+
+- API Rest en laravel relié a une BDD mysql
