@@ -103,6 +103,17 @@
 
             if(validate){
                 alert("TODO : Votre publication est en cours de traitement et de validation");
+                var request = "?";
+                request += "title="+title.value;
+                request += "&desc="+desc.value;
+                request += "&date="+document.getElementById("date_input").value;
+                request += "&location="+document.getElementById("location_input").value;
+                request += "&doc="+document.getElementById("doc_input").value;
+                request += "&img="+document.getElementById("img_input").value;
+
+                link = document.location.pathname+request;
+                console.log(link);
+                document.location.href = link;
 
             }else{
                 alert("Attention, des champs obligatoires sont manquants");
@@ -111,9 +122,7 @@
     </script>
 
     <?php
-        if(isset($_POST["AddPublication"])){
-            var_dump($_POST["AddPublication"]);
-        }
+            var_dump($_GET);
     ?>
 </body>
 </html>
