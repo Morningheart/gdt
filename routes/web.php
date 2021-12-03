@@ -28,3 +28,7 @@ Route::get('/InscriptionFormButton', function(){
 Route::get('/connexionFormButton', function(){
     return view('connexionForm');
 });
+
+Route::get('/post', function(){
+    return view('affichepost');
+});
