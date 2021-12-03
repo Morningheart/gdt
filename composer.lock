@@ -1220,7 +1220,6 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                }
                     "Laravel\\SerializableClosure\\": "src/"
                 }
             },
