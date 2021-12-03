@@ -1,7 +1,7 @@
 <div class="vtmn-flex">
 
     <?php
-        if(/*$_SESSION["connected"]*/TRUE){
+        if(/*isset($_SESSION["connected"])*/TRUE){
     ?>
         <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap" style="display: flex; flex-direction: row; align-items: center; padding: 10px">
             <a href="addPubliFormButton">
