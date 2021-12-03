@@ -18,7 +18,7 @@ class CreateHeroTable extends Migration
             $table->string("heroFirstName");
             $table->string("heroLastName");
             $table->string("heroDesc");
-            $table->string("herioState");
+            $table->string("heroState");
         });
     }
 

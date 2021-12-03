@@ -10,4 +10,6 @@ class Hero extends Model
     use HasFactory;
 
     protected $table = 'heros';
+    public $timestamps = false;
+    protected $primaryKey = 'idHero';
 }

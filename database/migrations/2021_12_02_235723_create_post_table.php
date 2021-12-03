@@ -20,6 +20,7 @@ class CreatePostTable extends Migration
             $table->string('postImg');
             $table->date('postDate');
             $table->string('postLocation');
+            $table->longText('data')->nullable();
             $table->integer('user_id')->unsigned()->index();
             $table->foreign('user_id')->references('idUser')->on('users')->onDelete('cascade');
         });
