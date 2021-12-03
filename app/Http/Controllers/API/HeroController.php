@@ -37,10 +37,11 @@ class HeroController extends Controller
          ]);
  
          // On crée un nouvel utilisateur
-         $hero = new User([
-             'heroFirstName' => $request->fname,
-             'heroLastName' => $request->lname
-         ]);
+         $hero = new Hero();
+         $hero->heroFirstName = $request->heroFirstName;
+         $hero->heroLastName = $request->heroLastName;
+         $hero->heroDesc =  $request->heroDesc;
+         $hero->heroState =  $request->heroState;
  
          $hero->save();
  

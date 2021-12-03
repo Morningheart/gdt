@@ -5,12 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Commoners extends Model
 {
     use HasFactory;
-
-    protected $table = 'posts';
-    protected $fillable = ['postText', 'postDoc'];
+    protected $table = 'commoners';
     public $timestamps = false;
-    protected $primaryKey = 'idPost';
+    protected $primaryKey = 'idCommoners';
 }

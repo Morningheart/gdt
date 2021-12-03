@@ -25,15 +25,16 @@ class UserController extends Controller
            'userLastName' => 'required|max:100',
            'userMail' => 'required|max:100',
            'userPassword' => 'required|max:100',
+           'userPrivilege' => 'required|max:10'
         ]);
 
         // On crée un nouvel utilisateur
-        $user = new User([
-            'userFirstName' => $request->fname,
-            'userLastName' => $request->lname,
-            'userMail' => $request->mail,
-            'userPassword' => bcrypt($request->password),
-            'userPrivilege' => $request->priv
+        $user = User::create([
+            'userFirstName' => $request->userFirstName,
+            'userLastName' => $request->userLastName,
+            'userMail' => $request->userMail,
+            'userPassword' => bcrypt($request->userPassword),
+            'userPrivilege' => $request->userPrivilege
         ]);
 
         $user->save();
