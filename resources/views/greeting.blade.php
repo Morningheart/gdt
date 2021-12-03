@@ -11,14 +11,9 @@
     <script src="main.js"></script>
     <div id="content">
         <div id="menu">
-            <div class="vtmn-flex">
-                <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap" style="display: flex; flex-direction: row; align-items: center; padding: 10px">
-                    <button class="vtmn-btn">Inscription</button>
-                </div>
-                <div class="block vtmn-flex vtmn-flex-row vtmn-flex-wrap" style="display: flex; flex-direction: row; align-items: center; padding: 10px">
-                    <button class="vtmn-btn">Connexion</button>
-                </div>
-            </div>
+
+            @include('navBar')
+            
             <div class="vtmn-toggle">
                 <div class="vtmn-toggle_switch">
                     <input type="checkbox" id="theme" onchange="switch_theme()"/>
