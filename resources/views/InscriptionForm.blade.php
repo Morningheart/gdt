@@ -102,7 +102,7 @@
             }
 
             if(validate){
-                alert("TODO : Votre publication est en cours de traitement et de validation");
+                alert("TODO : Vous voilà inscrit");
 
             }else{
                 alert("Attention, des champs obligatoires sont manquants");
