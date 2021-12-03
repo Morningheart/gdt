@@ -149,6 +149,7 @@
             </div>
         </div>
         @include('forumNoel')
+        @include('findYourHero')
     </div>
 </body>
 </html>
